@@ -641,8 +641,6 @@ Asteroid = function () {
               -5,   7,
               -3,   4,
                1,  10,
-               5,   4,
-              10,   0,
                5,  -6,
                2, -10,
               -4, -10,
@@ -939,7 +937,7 @@ Game = {
       Game.totalAsteroids = 4;
       Game.spawnAsteroids();
 
-      Game.nextBigAlienTime = Date.now() + 30000 + (30000 * Math.random());
+      Game.nextBigAlienTime = Date.now() + 10000 + (10000 * Math.random());
 
       this.state = 'spawn_ship';
     },
